@@ -74,6 +74,7 @@ int main()
 		printf("QBox_RS_Get failed: %d - %s\n", err.code, err.message);
 		goto lzDone;
 	}
+	printf("QBox_RS_Get url = %s\n", getRet.url);
 	hash = strdup(getRet.hash);
 
 	printf("QBox_RS_GetIfNotModified: %s\n", hash);
