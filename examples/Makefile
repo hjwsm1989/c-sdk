@@ -10,7 +10,7 @@ SOURCE_FILES=\
 	rs_demo.c\
 
 all: $(SOURCE_FILES)
-	gcc  -o rs_demo  -I/usr/local/include -L/usr/local/lib -lcurl -lm -lssl -lcrypto  $^
+	gcc -g -o rs_demo  -lcurl -lm -lssl -lcrypto  $^
 
 install: all
 	@echo
