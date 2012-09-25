@@ -10,7 +10,7 @@ SOURCE_FILES=\
 	rs_demo.c\
 
 all: $(SOURCE_FILES)
-	gcc -o rs_demo -lcurl -lm $^
+	gcc -o rs_demo -I/usr/include/curl -I/usr/include/openssl -L/usr/lib/x86_64-linux-gnu/ -lcurl -lssl -lm $^
 
 install: all
 	@echo

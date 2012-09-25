@@ -24,8 +24,8 @@ int main()
 	QBox_RS_StatRet statRet;
 	char* hash;
 
-	QBOX_ACCESS_KEY	= "<Please apply your access key>";
-	QBOX_SECRET_KEY	= "<Dont send your secret key to anyone>";
+	QBOX_ACCESS_KEY	= "MZ0JIf9QPomOmxhvWsDh-4x5qvJ9-FdWOqEymncm";
+	QBOX_SECRET_KEY	= "sxTWypHLCAiKilQ0IZpfvidnC2utV6b9VFX3PUyw";
 
 	QBox_Zero(client);
 	QBox_Global_Init(-1);

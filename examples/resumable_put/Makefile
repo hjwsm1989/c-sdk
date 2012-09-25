@@ -15,7 +15,7 @@ SOURCE_FILES=\
 	up_demo.c\
 
 all: $(SOURCE_FILES)
-	gcc -o up_demo -lcurl -lm -lz $^
+	gcc -o up_demo -I/usr/include/curl -I/usr/include/openssl -L/usr/lib/x86_64-linux-gnu -lcurl -lm -lz $^
 
 install: all
 	@echo
